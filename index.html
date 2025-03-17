@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <footer>
+
+        <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrarse</a>
+    </footer>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+        
+            <div class="center-container">
+
+                <h1 class="centered-title"> Mi Tribu </h1>
+
+            </div>
+
+
+       <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </nav>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<div class="cart-container">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span> 
+</div>
+
+    </header>
+
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a la diversión </h1>
+            <p>La mejor calidad en productos y servicios para ti.</p>
+            <a href="#products" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un equipo comprometido en ofrecer productos de alta calidad con un enfoque en la satisfacción del cliente.</p>
+    </section>
+
+
+    <section id="products">
+        <h2>Nuestros Productos</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="pelotero infantil.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>$100</p>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="pelotero mediano.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>$200</p>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="pelotero grande.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>$300</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required title="Por favor, ingrese un nombre válido.">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required title="Por favor, ingrese un correo electrónico válido.">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required title="Por favor, ingrese un mensaje."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: contacto@mitribu.com</p>
+            <p>Teléfono: +123 456 789</p>
+        </div>
+        <iframe class = "imagenmapa" src="mapa-punto-ubicacion-destino-mapa-ciudad-calle-rio-concepto-navegador-mapa-gps_34645-1078.avif" width="626" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+
+    <div id="login-page" style="display: none;">
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+
+            <label for="login-password">Contraseña:</label>
+            <input type="password" id="login-password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div id="registro-page" style="display: none;">
+        <h2>Registrarse</h2>
+        <form>
+            <label for="register-name">Nombre:</label>
+            <input type="text" id="register-name" name="name" required>
+
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" name="password" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MiTribu. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
