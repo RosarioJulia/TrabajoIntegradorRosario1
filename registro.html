@@ -1,0 +1,189 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrarse</h2>
+        <form>
+            <label for="register-name">Nombre:</label>
+            <input type="text" id="register-name" name="name" required>
+
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" name="password" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        <p><a href="index.html">Volver a la página principal</a></p>
+    </div>
+</body>
+</html>
+
+<style>
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #fbcfe8, #d4c2fc, #a8dadc, #ffb3ba); 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+   
+    .container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+  
+    h2 {
+        font-size: 28px;
+        color: #ff9a8b; 
+        margin-bottom: 20px;
+    }
+
+   
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    label {
+        font-size: 18px;
+        color: #333;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 12px;
+        border: 2px solid #e2a8df; 
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+        border-color: #a8dadc; 
+    }
+
+    
+    button {
+        padding: 14px;
+        background: #f3a2d1; 
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background: #f1c0d1; 
+    }
+
+    
+    p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    a {
+        color: #f3a2d1;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 12px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 15px;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 8px;
+            font-size: 12px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+    }
+</style>
+
+
+
+
